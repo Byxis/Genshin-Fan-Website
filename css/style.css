@@ -1,0 +1,49 @@
+body{
+  background-color: #121212;
+  background-image: url('https://cdn.glitch.com/8205340f-68bd-425a-a851-d99220a6d9ee%2F1105694.png?v=1614543205341');
+  background-size: auto;
+  background-position: 0cm 2cm;
+  background-repeat: no-repeat;
+}
+
+.title{
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+}
+
+.text{
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-indent: 5cm;
+	pointer-events: none;
+}
+
+.text_href{
+	font-family: 'Source Sans Pro', sans-serif;
+	color: gray;
+	text-decoration: none;
+	text-indent:10%;
+  pointer-events: auto;
+}
+.list{
+  list-style-type: none;
+  }
+@media only screen and (max-width : 1350px){
+	.text{
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-indent:2cm;
+	}
+	.text_href{
+	font-family: 'Source Sans Pro', sans-serif;
+	color: gray;
+	text-decoration: none;
+	text-indent:0%;
+}
+  
+@media only screen and (max-width : 700px){
+	.text{
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-indent:0%;
+	}
