@@ -1,14 +1,20 @@
 $(document).ready(function(){
   
-    $("button").click(function(){
+    $(".navigation_button").click(function(){
 
-      if($("button").text() == "☰"){
-        $("button").text("🞬");
+      if($(".navigation_button").text() == "☰"){
+        $(".navigation_button").text("✖");
       }else{
-        $("button").text("☰");
+        $(".navigation_button").text("☰");
       }
       
-      $("li").toggle("slow");
-    });  
+      $(".navigation_list").toggle("slow");
+    }); 
+  
+  window.onresize = function() {
+    $(".navigation_list").show("fast");
+  }
 });
+
+
 
