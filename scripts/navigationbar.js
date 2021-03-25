@@ -13,7 +13,15 @@ $(document).ready(function(){
   
   window.onresize = function() {
     $(".navigation_list").show("fast");
-  }
+  }/*
+  
+  $(window).scroll(function() {
+    if ($(this).scrollTop()>250){
+      $(".navigation_list").hide("fast");
+    }else{
+      $(".navigation_list").show("fast");
+    }
+  });*/
 });
 
 

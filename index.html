@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html content = "text/html" lang="fr-FR">
   <head>
-    <meta content = "text/html; charset = UTF-8" http-equiv = "content-type"/>
-		<meta http-equiv = "langage" content = "fr-FR"/>
+    <meta charset = "UTF-8"/>
 		<meta name= "langage" content = "fr-FR"/>
 		<meta name = "description" content = "exemples javascript"/>
 		<title>Genshin Wiki</title>
@@ -16,46 +15,42 @@
   <body>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="scripts/navigationbar.js"></script>
-    <div>
-      <center>
-        <a href = "index.html"><img src = "https://cdn.glitch.com/8205340f-68bd-425a-a851-d99220a6d9ee%2Flogo.png?v=1614543203182" alt = "Logo site" width = "100" height = "50"/></a>
-      </center>
+    <div class = "center">
+      <a href = "index.html"><img class = "center" src = "https://cdn.glitch.com/8205340f-68bd-425a-a851-d99220a6d9ee%2Flogo.png?v=1614543203182" alt = "Logo site" width = "100" height = "50"/></a>
       <nav class = "navigation_nav">
-        <center>
-          <ul class = "navigation_ul">
-            <button class="navigation_button">🞬</button>
-            <li class = "navigation_list">
-              <a class = "navigation_a" href = "index.html">
-                <img src = "https://cdn.glitch.com/8205340f-68bd-425a-a851-d99220a6d9ee%2Fmaison.png?v=1614543202406" alt = "Logo Accueil"/>Accueil
-              </a>
-            </li>
-            <li class = "navigation_list">
-              <a class = "navigation_a" href = "news.html">
-                <img src = "https://cdn.glitch.com/8205340f-68bd-425a-a851-d99220a6d9ee%2Fplume.png?v=1614543202469" alt = "Logo News"/>News
-              </a>
-            </li>
-            <li class = "navigation_list">
-              <a class = "navigation_a" href = "persolist.html">
-                <img src = "https://cdn.glitch.com/8205340f-68bd-425a-a851-d99220a6d9ee%2Fpersonne.png?v=1614543202455" alt = "Logo Personnages"/>Personnages
-              </a>
-            </li>
-            <li class = "navigation_list">
-              <a class = "navigation_a" href = "tierlist.html">
-                <img src = "https://cdn.glitch.com/8205340f-68bd-425a-a851-d99220a6d9ee%2Fepee.png?v=1614543202643" alt = "Logo Tier List"/>Tier List
-              </a>
-            </li>
-            <li class = "navigation_list">
-              <a class = "navigation_a" href = "map.html">
-                <img src = "https://cdn.glitch.com/8205340f-68bd-425a-a851-d99220a6d9ee%2FLocation.png?v=1614543202406" alt = "Logo Map Interactive"/>Map Interactive
-              </a>
-            </li>
-            <li class = "navigation_list">
-              <a class = "navigation_a" href = "aboutus.html">
-                <img src = "https://cdn.glitch.com/8205340f-68bd-425a-a851-d99220a6d9ee%2Fi.png?v=1614543202406" alt = "Logo A propos"/>A propos
-              </a>
-            </li>
-          </ul>
-        </center>
+        <button class="navigation_button">🞬</button>
+        <ul class = "navigation_ul">
+          <li class = "navigation_list">
+            <a class = "navigation_a" href = "index.html">
+              <img src = "https://cdn.glitch.com/8205340f-68bd-425a-a851-d99220a6d9ee%2Fmaison.png?v=1614543202406" alt = "Logo Accueil"/>Accueil
+            </a>
+          </li>
+          <li class = "navigation_list">
+            <a class = "navigation_a" href = "news.html">
+              <img src = "https://cdn.glitch.com/8205340f-68bd-425a-a851-d99220a6d9ee%2Fplume.png?v=1614543202469" alt = "Logo News"/>News
+            </a>
+          </li>
+          <li class = "navigation_list">
+            <a class = "navigation_a" href = "persolist.html">
+              <img src = "https://cdn.glitch.com/8205340f-68bd-425a-a851-d99220a6d9ee%2Fpersonne.png?v=1614543202455" alt = "Logo Personnages"/>Personnages
+            </a>
+          </li>
+          <li class = "navigation_list">
+            <a class = "navigation_a" href = "cristaux.html">
+              <img src = "https://cdn.glitch.com/8205340f-68bd-425a-a851-d99220a6d9ee%2Fepee.png?v=1614543202643" alt = "Logo Cristaux"/>Cristaux              
+            </a>
+          </li>
+          <li class = "navigation_list">
+            <a class = "navigation_a" href = "map.html">
+              <img src = "https://cdn.glitch.com/8205340f-68bd-425a-a851-d99220a6d9ee%2FLocation.png?v=1614543202406" alt = "Logo Map Interactive"/>Map Interactive
+            </a>
+          </li>
+          <li class = "navigation_list">
+            <a class = "navigation_a" href = "aboutus.html">
+              <img src = "https://cdn.glitch.com/8205340f-68bd-425a-a851-d99220a6d9ee%2Fi.png?v=1614543202406" alt = "Logo A propos"/>A propos
+            </a>
+          </li>
+        </ul>
       </nav>
     </div>
     <div class = "decalage">
@@ -70,8 +65,22 @@
       <ul>
         <li class = "list">
           <p class="text">
-            05/12 - Ajout des parties News, Personnages,Tier List et A propos
-            (vide)
+            22/03 - Remplacement de la partie Tier List par Cristaux
+          </p>
+        </li>
+        <li class = "list">
+          <p class="text">
+            22/03 - Rajout de la map française en sous lien.
+          </p>
+        </li>
+        <li class = "list">
+          <p class="text">
+            22/03 - Fix de bugs : Problème avec la barre de navigation, problème d'affichage avec la map interactive
+          </p>
+        </li>
+        <li class = "list">
+          <p class="text">
+            05/12 - Ajout des parties News, Personnages,Tier List et A propos (vide)
           </p>
         </li>
         <li class="list">

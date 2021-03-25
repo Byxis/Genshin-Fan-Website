@@ -1,60 +1,91 @@
-body{
+body {
   background-color: #121212;
-  background-image: url('https://cdn.glitch.com/8205340f-68bd-425a-a851-d99220a6d9ee%2F1105694.png?v=1614543205341');
+  background-image: url("https://cdn.glitch.com/8205340f-68bd-425a-a851-d99220a6d9ee%2F1105694.png?v=1614543205341");
   background-size: auto;
   background-position: 0cm 2cm;
   background-repeat: no-repeat;
 }
 
-.title{
-	font-family: 'Source Sans Pro', sans-serif;
-	color: white;
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.text{
-	color: white;
-	font-family: 'Source Sans Pro', sans-serif;
-	"""text-indent: 5cm;"""
-	pointer-events: none;
+.four_star{
+  color : gold;
+  font-family : "Source Sans Pro", sans-serif;
 }
 
-.text_href{
-	font-family: 'Source Sans Pro', sans-serif;
-	color: gray;
-	text-decoration: none;
-	"""text-indent:10%;"""
+.title {
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+}
+
+.text {
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  pointer-events: none;
+}
+
+.five_stars {
+  color: gold;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.text_href {
+  font-family: "Source Sans Pro", sans-serif;
+  color: gray;
+  text-decoration: none;
   pointer-events: auto;
 }
-.list{
+.list {
   list-style-type: none;
-  }
-
-.decalage{
+}
+.decalage {
+  margin: 0px 215px 0px 215px;
+}
+.twitter-timeline {
   margin: 0px 215px 0px 215px;
 }
 
-@media only screen and (max-width : 1350px){
-	.text{
-	color: white;
-	font-family: 'Source Sans Pro', sans-serif;
-	"""text-indent:2cm;"""
-	}
-	.text_href{
-	font-family: 'Source Sans Pro', sans-serif;
-	color: gray;
-	text-decoration: none;
-	"""text-indent:0%;"""
+.perso {
+  display: flex;
 }
-  .decalage{
-  margin: 0px;
+
+.image-text {
+  text-align: center;
+  display: block;
+  margin-right: 40px;
+  margin-bottom: 50px;
+  float: left;
 }
-  
-@media only screen and (max-width : 700px){
-	.text{
-	color: white;
-	font-family: 'Source Sans Pro', sans-serif;
-	"""text-indent:0%;"""
-	}
-  .decalage{
-  margin: 0px;
+
+.image-text:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 1350px) {
+  .text {
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  .text_href {
+    font-family: "Source Sans Pro", sans-serif;
+    color: gray;
+    text-decoration: none;
+  }
+  .decalage {
+    margin: 0px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .text {
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  .decalage {
+    margin: 0px;
+  }
 }
