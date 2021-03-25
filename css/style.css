@@ -12,11 +12,6 @@ body {
   margin-right: auto;
 }
 
-.four_star{
-  color : gold;
-  font-family : "Source Sans Pro", sans-serif;
-}
-
 .title {
   font-family: "Source Sans Pro", sans-serif;
   color: white;
@@ -30,6 +25,11 @@ body {
 
 .five_stars {
   color: gold;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.four_stars {
+  color: magenta;
   font-family: "Source Sans Pro", sans-serif;
 }
 
