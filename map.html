@@ -3,7 +3,8 @@
   <head>
     <meta charset = "UTF-8"/>
 		<meta name= "langage" content = "fr-FR"/>
-		<meta name = "description" content = "exemples javascript"/>
+		<meta name = "description" content = "Bienvenue sur ce site NON-Officiel de Genshin impact !"/>
+    <meta property="og:image" content="https://cdn.glitch.com/8205340f-68bd-425a-a851-d99220a6d9ee%2Ffavicon.png?v=1614796154065">
 		<title>Genshin Wiki</title>
     <link rel = "shortcut icon" type = "image/x-icon" href = "https://cdn.glitch.com/8205340f-68bd-425a-a851-d99220a6d9ee%2Ffavicon.png?v=1614796154065"/>
     <link rel = "stylesheet" href = "css/style.css"/>
@@ -11,15 +12,16 @@
     <link rel = "preconnect" href = "https://fonts.gstatic.com"/>
     <link href = "https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel = "stylesheet"/>
     <link href = "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap" rel = "stylesheet"/>
-    <script src="scripts/size.js"></script>
+    <script src="scripts/setheight.js"></script>
   </head>
   <body onload="setHeight()">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="scripts/navigationbar.js"></script>
-    <div class = "center">
-      <a href = "index.html"><img class = "center" src = "https://cdn.glitch.com/8205340f-68bd-425a-a851-d99220a6d9ee%2Flogo.png?v=1614543203182" alt = "Logo site" width = "100" height = "50"/></a>
+    <script src="scripts/buttonmap.js"></script>
+    <header>
+      <a href = "index.html"><img class = "center logobackground" src = "https://cdn.glitch.com/8205340f-68bd-425a-a851-d99220a6d9ee%2Flogo.png?v=1614543203182" alt = "Logo site" width = "100" height = "50"/></a>
       <nav class = "navigation_nav">
-        <button class="navigation_button">🞬</button>
+        <button class="navigation_button">☰</button>
         <ul class = "navigation_ul">
           <li class = "navigation_list">
             <a class = "navigation_a" href = "index.html">
@@ -32,7 +34,7 @@
             </a>
           </li>
           <li class = "navigation_list">
-            <a class = "navigation_a" href = "persolist.html">
+            <a class = "navigation_a" href = "personnages.html">
               <img src = "https://cdn.glitch.com/8205340f-68bd-425a-a851-d99220a6d9ee%2Fpersonne.png?v=1614543202455" alt = "Logo Personnages"/>Personnages
             </a>
           </li>
@@ -53,15 +55,18 @@
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
     <div style="background-img: url('https://cdn.glitch.com/8205340f-68bd-425a-a851-d99220a6d9ee%2F1105694.png?v=1614543205341');"></div>
-    <iframe id = "map" width="99.9%" height= "5px" src="https://webstatic.mihoyo.com/app/ys-map-cn/index.html?bbs_presentation_style=no_header&ts=1606133548270#/map/2?shown_types=&center=2803.84,-1730.74&zoom=-1.30">Si vous voyez ce message, c'est que votre navigateur ne supporte pasiframe. Cliquez
-    <a class="text_href" href="https://webstatic.mihoyo.com/app/ys-map-cn/index.html?bbs_presentation_style=no_header&ts=1606133548270#/map/2?shown_types=&center=2803.84,-1730.74&zoom=-1.30">ici</a>pour avoir accès à la map !</iframe>
+    <iframe class = "map" id = "map" width="99.9%" height= "5px" src="https://webstatic.mihoyo.com/app/ys-map-cn/index.html?bbs_presentation_style=no_header&ts=1606133548270#/map/2?shown_types=&center=1126.00,-571.00&zoom=-2.00">Si vous voyez ce message, c'est que votre navigateur ne supporte pasiframe. Cliquez
+    <a class="text_href" href="https://webstatic.mihoyo.com/app/ys-map-cn/index.html?bbs_presentation_style=no_header&ts=1606133548270#/map/2?shown_types=&center=1126.00,-571.00&zoom=-2.00">ici</a>pour avoir accès à la map !</iframe>
+    <button class="map-btn text">
+      Cliquez ici pour intervertir les maps entre Chinois et Français ! (Map: <a class="nbrmap"> 1 </a> )
+    </button>
     <p class="text">
       <b> Map Officiel de Genshin Impact</b>, accessible par
-      <a class="text_href" href="https://webstatic.mihoyo.com/app/ys-map-cn/index.html?bbs_presentation_style=no_header&ts=1606133548270#/map/2?shown_types=&center=2803.84,-1730.74&zoom=-1.30">ce lien</a>.
-      La map est en chinois, mais est plus précise. Pour voir la map en Français,
-      <a class="text_href" href="https://www.genshin-impact.fr/map/">cliquez ici</a>
+      <a class="text_href" href="https://webstatic.mihoyo.com/app/ys-map-cn/index.html?bbs_presentation_style=no_header&ts=1606133548270#/map/2?shown_types=&center=1126.00,-571.00&zoom=-2.00">ce lien</a>.
+      La map en Français est accessible en 
+      <a class="text_href" href="https://www.genshin-impact.fr/map/">cliquant ici</a>
       .
     </p>
   </body>
